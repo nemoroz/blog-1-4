@@ -1,0 +1,56 @@
+:root {
+    --round-button--size: 40px;
+    --round-button--color: #ff3e79;
+}
+
+.round-button {
+    background-color: var(--round-button--color);
+    width: var(--round-button--size);
+    height: var(--round-button--size);
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: none;
+    outline: none;
+    border-radius: 50%;
+
+    transition: transform 0.25s, opacity 0.1s;
+    transform-origin: center;
+}
+
+.round-button:hover {
+    opacity: 0.6;
+}
+
+.round-button:active {
+    transform: scale(0.8);
+}
+
+.round-button:focus {
+    outline: 2px solid var(--round-button--color);
+}
+
+.round-button:active:focus {
+    outline: none;
+}
+
+.round-button--close {
+    background-image: url(../img/close.svg);
+}
+
+.round-button--search {
+    background-image: url(../img/search.svg);
+}
+
+.round-button--phone {
+    background-image: url(../img/phone.svg);
+}
+
+.round-button--chat {
+    background-image: url(../img/chat.svg);
+}
+
+.round-button--auth {
+    background-image: url(../img/auth.svg);
+}
